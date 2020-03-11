@@ -25,7 +25,6 @@
             }
 
             .flex-center {
-                align-items: center;
                 display: flex;
                 justify-content: center;
             }
@@ -66,6 +65,9 @@
     <body>
         <div class="flex-center position-ref full-height">
            <h1>Galerie Laravel</h1>
+
+           @yield('content')
+
         </div>
     </body>
 </html>
