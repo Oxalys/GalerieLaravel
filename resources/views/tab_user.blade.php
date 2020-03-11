@@ -12,44 +12,28 @@
  <thead>
    <tr>
      <th scope="col">ID</th>
-     <th scope="col">Titre</th>
-     <th scope="col">Image</th>
-     <th scope="col">Date de publication</th>
-     <th scope="col">ID du genre</th>
-     <th scope="col">ID de l'auteur</th>
+     <th scope="col">Nom</th>
+     <th scope="col">Age</th>
+     <th scope="col">Email</th>
      <th scope="col">Action</th>
      
    </tr>
  </thead>
  <tbody>
-     @foreach ($livres as $item)
+     @foreach ($users as $item)
          {{-- le dolar se trouve dans le controller le compact --}}
      
          <tr>
-             <td>{{$item->isbn}}</td>
-             <td>{{$item->titre}}</td>
-             <td><img src="{{$item->url}}" alt=""></td>
-             <td>{{$item->date_publi}}</td>
-             <td>
-               @foreach ($genres as $genre)
-              @if ($item->id_genre == $genre->id)
-              {{$genre->genre}}
-              @endif
-              @endforeach
-            </td>
-             <td>
-                @foreach ($auteurs as $auteur)
-                  @if ($item->id_auteur == $auteur->id)
-              {{$auteur->auteur}}
-                  @endif
-                @endforeach
-            </td>
+             <td>{{$item->id}}</td>
+             <td>{{$item->name}}</td>
+             <td>{{$item->age}}</td>
+             <td>{{$item->email}}</td>
              <td>
               
-              <a href="{{route('show_livre' ,$item->isbn)}}"><button class="btn btn-info">Voir plus</button></a> 
-              <a href="{{route('edit_livre' ,$item->isbn)}}"><button class="btn btn-warning">Modifier</button></a> 
+              <a href="{{route('show_user' ,$item->id)}}"><button class="btn btn-info">Voir plus</button></a> 
+              <a href="{{route('edit_user' ,$item->id)}}"><button class="btn btn-warning">Modifier</button></a> 
               <div class="my-2"></div>
-              <a href="{{route('delete_livre' ,$item->isbn)}}"><button class='btn btn-danger'>Supprimer</button></a>
+              <a href="{{route('delete_user' ,$item->id)}}"><button class='btn btn-danger'>Supprimer</button></a>
             </td>
          </tr>
 
