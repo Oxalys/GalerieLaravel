@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreateFailedJobsTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the mSQLSTATE[HY000] [2002] No such file or directory (SQL: select * from information_schema.tables where table_schema = Galerie_laravel and table_name = migrations and table_type = 'BASE TABLE')igrations.
      *
      * @return void
      */
