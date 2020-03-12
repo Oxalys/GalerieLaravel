@@ -9,7 +9,10 @@
           
           
             <div class="form-group col-md-6">
-                <input type="file" class="form-control" name="image" />
+                <input type="file" class="form-control @error('image') is-invalid @enderror" name="image" />
+                @error('image')  
+            <div class="text-danger">{{ $message }}</div>  
+              @enderror
                 <div class="validation"></div>
             </div>
               

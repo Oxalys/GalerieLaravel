@@ -6,9 +6,13 @@
     <div class="form-row text-center">
 
         <div class="form-group col-md-6">
-            <input type="file" class="form-control" name="image"  placeholder="Your URL" />
+            <input type="file"  name="image"  placeholder="Your URL" />
+            @error('image')
+        <div class="text-danger">{{ $message }}
+        </div>
+        @enderror
             <div class="validation"></div>
-            
+
         </div>
           
   </div>

@@ -5,12 +5,23 @@
     @csrf
     <div class="form-row text-center">
         <div class="form-group col-md-6">
-            <input type="text" class="form-control" name="name"  placeholder="Entrer un nom a votre avatar" />
+            <input type="text"  name="name"  placeholder="Entrer un nom a votre avatar" value="@if($errors->first('name'))
+            @else{{old('name')}}  @endif"
+            class="form-control @error('name') is-invalid @enderror" />
+            
+        @error('name')
+        <div class="text-danger">{{ $message }}
+        </div>
+        @enderror
             <div class="validation"></div>
           </div>
           
             <div class="form-group col-md-6">
-                <input type="file" class="form-control" name="avatar"  />
+                <input type="file"  name="avatar"  />
+                @error('avatar')
+        <div class="text-danger">{{ $message }}
+        </div>
+        @enderror
                 <div class="validation"></div>
             </div>
 

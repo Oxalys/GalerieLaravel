@@ -10,7 +10,7 @@
 <p>{{$item->name}}</p>
 <hr>
 <h4>Avatar:</h4>
-<p>{{$item->avatar}}</p>
+<img src="{{$item->avatar}}" alt="">
 <hr>
 
 </div>

@@ -8,7 +8,10 @@
           
           
           <div class="form-group col-md-6">
-              <input type="text" class="form-control" name="categorie"  placeholder="Entrer une catégorie" />
+              <input type="text" class="form-control @error('categorie') is-invalid @enderror" name="categorie"  placeholder="Entrer une catégorie" />
+              @error('categorie')  
+          <div class="text-danger">{{ $message }}</div>  
+            @enderror
               <div class="validation"></div>
             </div>
       </div>

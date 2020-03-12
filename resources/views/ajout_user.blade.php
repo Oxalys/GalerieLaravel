@@ -29,13 +29,13 @@
                 <div class="validation"></div>
             </div>
 
+            
             <div class="form-group col-md-6">
                 <input type="email"  name="email"  placeholder="Entrer votre email"
-                value="@if($errors->first('age'))
-                @else{{old('age')}}  @endif"
-                class="form-control @error('age') is-invalid @enderror" />
                 
-            @error('age')
+                class="form-control @error('email') is-invalid @enderror" />
+                
+            @error('email')
             <div class="text-danger">{{ $message }}
             </div>
             @enderror

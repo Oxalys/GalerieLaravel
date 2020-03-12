@@ -75,7 +75,7 @@ class CategorieController extends Controller
            
             
             
-            $users->Categorie =$request->input('categorie');
+            $categories->categorie =$request->input('categorie');
             
             $categories->save();
     
