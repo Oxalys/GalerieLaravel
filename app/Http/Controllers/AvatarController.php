@@ -69,12 +69,12 @@ class AvatarController extends Controller
                 
             ]);
 
-            $avatars= Avatar::find($id);
             $storages=Storage::disk('public')->put('', $request->file('avatar'));
+            $avatars= Avatar::find($id);
 
             
             $avatars->name =$request->input('name');
-            $avatars->avatar =$request->file('avatar');
+            $avatars->avatar =$storages;
             
             $avatars->save();
     
@@ -87,7 +87,7 @@ class AvatarController extends Controller
         public function show( $id){
             $avatars=Avatar::all()->where('id',$id);
             
-
+            $avatars= new Avatar();
         return view ('show_avatar' , compact('avatars'));
         }
         
