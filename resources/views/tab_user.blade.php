@@ -3,16 +3,16 @@
 
 
 
-<h2  class="text-centerMethod Illuminate\Database\Eloquent\Collection::save does not exist.">Users</h2>
+<h2  class="text-center my-4">Users</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_user')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>
 
-<table class="table">
+<table class="table mx-3">
  <thead>
    <tr>
-     <th scope="col">ID</th>
-     <th scope="col">Nom</th>
+     <th scope="col-1">ID</th>
+     <th scope="col-2">Nom</th>
      <th scope="col">Age</th>
      <th scope="col">Email</th>
      <th scope="col">Action</th>

@@ -8,7 +8,7 @@
           
           
           <div class="form-group col-md-6">
-              <input type="text" class="form-control" name="titre"  placeholder="Entrer une catégorie" />
+              <input type="text" class="form-control" name="categorie"  placeholder="Entrer une catégorie" />
               <div class="validation"></div>
             </div>
       </div>

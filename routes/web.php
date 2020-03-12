@@ -18,11 +18,10 @@ Route::get('/','WelcomeController@index')->name('home');
 // Users
 Route::get('/tab_user',"UserController@index" )->name('tab_user');
 Route::get('/show_user/{id}', 'UserController@show')->name('show_user');
-Route::get('/ajout_user', "UserController@create" )->name('ajout_user');
-Route::post('/save_user', 'UserController@store')->name('save_user');
-Route::get('/edit_user/{isbn}',"UserController@edit" )->name('edit_user');
-Route::post('/update_user/{isbn}',"UserController@update" )->name('update_user');
-Route::get('/delete_user/{isbn}', 'UserController@destroy')->name('delete_user');
+Route::get('/save_user', 'UserController@store')->name('save_user');
+Route::get('/edit_user/{id}',"UserController@edit" )->name('edit_user');
+Route::post('/update_user/{id}',"UserController@update" )->name('update_user');
+Route::get('/delete_user/{id}', 'UserController@destroy')->name('delete_user');
 
 
 // Avatar
@@ -53,3 +52,4 @@ Route::post('/save_image', 'ImageController@store')->name('save_image');
 Route::get('/edit_image/{id}',"ImageController@edit" )->name('edit_image');
 Route::post('/update_image/{id}',"ImageController@update" )->name('update_image');
 Route::get('/delete_image/{id}', 'ImageController@destroy')->name('delete_image');
+Route::get('/download_image/{id}', 'ImageController@download')->name('download_image');

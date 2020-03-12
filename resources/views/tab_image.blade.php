@@ -4,7 +4,7 @@
 
 
 
-<h2  class="text-center">Images</h2>
+<h2  class="text-center my-4">Images</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_image')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>
@@ -12,9 +12,9 @@
 <table class="table">
  <thead>
    <tr>
-     <th scope="col">ID</th>
-     <th scope="col">Image</th>
-     <th scope="col">Action</th>
+     <th scope="col-4">ID</th>
+     <th scope="col-4">Image</th>
+     <th scope="col-4">Action</th>
      
    </tr>
  </thead>
@@ -24,7 +24,7 @@
      
          <tr>
              <td>{{$item->id}}</td>
-             <td>{{$item->image}}</td>
+             <td><img  class="w-25"src="{{asset("storage/".$item->image)}}" alt=""></td>
              
              <td>
               

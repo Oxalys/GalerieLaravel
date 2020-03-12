@@ -4,7 +4,7 @@
 
 
 
-<h2  class="text-center">Catégories</h2>
+<h2  class="text-center my-4">Catégories</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_categorie')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>
@@ -12,9 +12,9 @@
 <table class="table">
  <thead>
    <tr>
-     <th scope="col">ID</th>
-     <th scope="col">Categorie</th>
-     <th scope="col">Action</th>
+     <th scope="col-4">ID</th>
+     <th scope="col-4">Categorie</th>
+     <th scope="col-4">Action</th>
      
    </tr>
  </thead>
