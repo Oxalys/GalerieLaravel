@@ -27,11 +27,6 @@
             </div>
             @enderror
                 <div class="validation"></div>
-<<<<<<< HEAD
-=======
-              </div>
-                <div class="validation"></div>
->>>>>>> e25bc335f89c26a74c8bc9606044f636284d9f56
             </div>
 
             <div class="form-group col-md-6">
