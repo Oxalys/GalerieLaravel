@@ -29,7 +29,7 @@
             </div>
             @enderror
                 <div class="validation"></div>
-              </div>/>
+              </div>
                 <div class="validation"></div>
             </div>
 
