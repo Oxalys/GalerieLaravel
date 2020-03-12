@@ -8,12 +8,28 @@
           
           
           <div class="form-group col-md-6">
-              <input type="text" class="form-control" name="name"  placeholder="Entrer votre nom" />
+              <input type="text" class="form-control" name="name"  placeholder="Entrer votre nom"  value="@if($errors->first('name'))
+              @else{{old('name')}}  @endif"
+              class="form-control @error('name') is-invalid @enderror" />
+              
+          @error('name')
+          <div class="text-danger">{{ $message }}
+          </div>
+          @enderror
               <div class="validation"></div>
             </div>
             
             <div class="form-group col-md-6">
-                <input type="number" class="form-control" name="age"  placeholder="Entrer votre âge " />
+                <input type="number" class="form-control " name="age"  placeholder="Entrer votre âge "  value="@if($errors->first('name'))
+                @else{{old('name')}}  @endif"
+                class="form-control @error('name') is-invalid @enderror" />
+                
+            @error('name')
+            <div class="text-danger">{{ $message }}
+            </div>
+            @enderror
+                <div class="validation"></div>
+              </div>/>
                 <div class="validation"></div>
             </div>
 

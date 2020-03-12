@@ -86,14 +86,12 @@ class ImageController extends Controller
             
         
 
-        // public function show( $id){
-        //     $livres=Livre::all()->where('isbn',$id);
-        //     $genres=Genre::all();
-        //     $auteurs=Auteur::all();
+        public function show( $id){
+            $images=Image::all()->where('id',$id);
+           
 
-        // return view ('show_livre' , compact('l}
-        // else{ivres' , 'genres' , 'auteurs'));
-        // }
+        return view ('show_image' , compact('images'));
+        }
         
         public function destroy($id){
             $images=Image::find($id);

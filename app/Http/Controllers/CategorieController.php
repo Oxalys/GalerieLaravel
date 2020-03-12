@@ -85,14 +85,12 @@ class CategorieController extends Controller
             
         
 
-        // public function show( $id){
-        //     $livres=Livre::all()->where('isbn',$id);
-        //     $genres=Genre::all();
-        //     $auteurs=Auteur::all();
+        public function show( $id){
+            $categories=Categorie::all()->where('id',$id);
+           
 
-        // return view ('show_livre' , compact('l}
-        // else{ivres' , 'genres' , 'auteurs'));
-        // }
+        return view ('show_categorie' , compact('categories'));
+        }
         
         public function destroy($id){
             $categories=Categorie::find($id);

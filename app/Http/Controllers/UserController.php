@@ -91,14 +91,12 @@ class UserController extends Controller
             
         
 
-        // public function show( $id){
-        //     $livres=Livre::all()->where('isbn',$id);
-        //     $genres=Genre::all();
-        //     $auteurs=Auteur::all();
+        public function show( $id){
+            $users=User::all()->where('id',$id);
+            
 
-        // return view ('show_livre' , compact('l}
-        // else{ivres' , 'genres' , 'auteurs'));
-        // }
+        return view ('show_user' , compact('users'));
+        }
         
         public function destroy($id){
             $users=User::find($id);

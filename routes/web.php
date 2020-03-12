@@ -18,6 +18,7 @@ Route::get('/','WelcomeController@index')->name('home');
 // Users
 Route::get('/tab_user',"UserController@index" )->name('tab_user');
 Route::get('/show_user/{id}', 'UserController@show')->name('show_user');
+Route::get('/ajout_user', "UserController@create" )->name('ajout_user');
 Route::get('/save_user', 'UserController@store')->name('save_user');
 Route::get('/edit_user/{id}',"UserController@edit" )->name('edit_user');
 Route::post('/update_user/{id}',"UserController@update" )->name('update_user');

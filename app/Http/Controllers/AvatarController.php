@@ -89,14 +89,12 @@ class AvatarController extends Controller
             
         
 
-        // public function show( $id){
-        //     $livres=Livre::all()->where('isbn',$id);
-        //     $genres=Genre::all();
-        //     $auteurs=Auteur::all();
+        public function show( $id){
+            $avatars=Avatar::all()->where('id',$id);
+            
 
-        // return view ('show_livre' , compact('l}
-        // else{ivres' , 'genres' , 'auteurs'));
-        // }
+        return view ('show_avatar' , compact('avatars'));
+        }
         
         public function destroy($id){
             $avatars=Avatar::find($id);
