@@ -34,7 +34,7 @@ class ImageController extends Controller
 
             
         
-            $images->email =$request->input('image');
+            $images->image =$request->input('image');
             
       
         
@@ -76,7 +76,7 @@ class ImageController extends Controller
            
             
             
-            $users->Image =$request->input('image');
+            $users->image =$request->input('image');
             
             $images->save();
     
