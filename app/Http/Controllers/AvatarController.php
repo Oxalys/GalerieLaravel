@@ -30,12 +30,13 @@ class AvatarController extends Controller
         
     ]);
             
+        $storages=Storage::disk('public')->put('', $request->file('avatar'));
         $avatars= new Avatar();
 
             
             $avatars->name =$request->input('name');
             
-            $avatars->avatar =$request->input('avatar');
+            $avatars->avatar =$storages;
             
       
         
@@ -98,7 +99,7 @@ class AvatarController extends Controller
         
         public function destroy($id){
             $avatars=Avatar::find($id);
-           
+            Storage::disk("public")->delete($avatars->avatar);
             $avatars->delete();
             return redirect()->back();
         }

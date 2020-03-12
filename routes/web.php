@@ -53,3 +53,4 @@ Route::post('/save_image', 'ImageController@store')->name('save_image');
 Route::get('/edit_image/{id}',"ImageController@edit" )->name('edit_image');
 Route::post('/update_image/{id}',"ImageController@update" )->name('update_image');
 Route::get('/delete_image/{id}', 'ImageController@destroy')->name('delete_image');
+Route::get('/download_image/{id}', 'ImageController@download')->name('download_image');

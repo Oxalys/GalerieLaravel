@@ -32,6 +32,7 @@ class UserController extends Controller
         
     ]);
             
+    
         $users= new User();
 
             
@@ -40,13 +41,13 @@ class UserController extends Controller
             $users->age =$request->input('age');
             $users->email =$request->input('email');
             
-            $avatars= Avatar::all();
+            $users= User::all();
         
         
         
         //  ( le nom de mon input)
 
-        $livres->save();
+        $users->save();
 
         return redirect()->route('tab_user');
         }

@@ -101,4 +101,9 @@ class ImageController extends Controller
             $images->delete();
             return redirect()->back();
         }
+        public function download($id)
+    {
+        $img = Image::find($id);
+        return Storage::disk('public')->download($img->image);
+    }
 }
