@@ -32,7 +32,6 @@
               
               <a href="{{route('show_avatar' ,$item->id)}}"><button class="btn btn-info">Voir plus</button></a> 
               <a href="{{route('edit_avatar' ,$item->id)}}"><button class="btn btn-warning">Modifier</button></a> 
-              <div class="my-2"></div>
               <a href="{{route('delete_avatar' ,$item->id)}}"><button class='btn btn-danger'>Supprimer</button></a>
             </td>
          </tr>

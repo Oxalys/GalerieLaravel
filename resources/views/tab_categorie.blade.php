@@ -12,9 +12,9 @@
 <table class="table">
  <thead>
    <tr>
-     <th scope="col-4">ID</th>
-     <th scope="col-4">Categorie</th>
-     <th scope="col-4">Action</th>
+     <th scope="col">ID</th>
+     <th scope="col">Categorie</th>
+     <th scope="col">Action</th>
      
    </tr>
  </thead>
@@ -30,7 +30,6 @@
               
               <a href="{{route('show_categorie' ,$item->id)}}"><button class="btn btn-info">Voir plus</button></a> 
               <a href="{{route('edit_categorie' ,$item->id)}}"><button class="btn btn-warning">Modifier</button></a> 
-              <div class="my-2"></div>
               <a href="{{route('delete_categorie' ,$item->id)}}"><button class='btn btn-danger'>Supprimer</button></a>
             </td>
          </tr>

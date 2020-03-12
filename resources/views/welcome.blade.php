@@ -48,15 +48,15 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref my-5">
-            <h1 class="text-center my-5 title">Galerie Laravel</h1>
+        <div class="flex-center position-ref my-5 border">
+            <h1 class="text-center my-5 title">Zainab | Galerie Laravel | Salome</h1>
         </div>
-        <div class="links content py-5 flex-center h-25">
-           <a href="{{route('home')}}">Home</a>
-           <a href="{{route('tab_user')}}">Users</a>
-           <a href="{{route('tab_avatar')}}">Avatars</a>
-           <a href="{{route('tab_categorie')}}">Catégories</a>
-           <a href="{{route('tab_image')}}">Images</a>
-        </div>
+
+        @section('content')
+
+        @include('nav')
+
+        @endsection
+        
     </body>
 </html>
