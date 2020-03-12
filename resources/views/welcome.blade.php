@@ -29,13 +29,13 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 80px;
             }
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 18px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -49,9 +49,9 @@
     </head>
     <body>
         <div class="flex-center position-ref my-5">
-            <h1 class="text-center mt-5">Galerie Laravel</h1>
+            <h1 class="text-center my-5 title">Galerie Laravel</h1>
         </div>
-        <div class="links content h1 py-5 flex-center h-25">
+        <div class="links content py-5 flex-center h-25">
            <a href="{{route('home')}}">Home</a>
            <a href="{{route('tab_user')}}">Users</a>
            <a href="{{route('tab_avatar')}}">Avatars</a>
