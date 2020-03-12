@@ -27,7 +27,7 @@
              <td>{{$item->id}}</td>
              <td>{{$item->name}}</td>
              <td><img src="{{$item->avatar}}" alt=""></td>
-             
+            
              
              <td>
               
