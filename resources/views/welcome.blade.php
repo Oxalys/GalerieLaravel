@@ -3,21 +3,12 @@
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
+            
             .full-height {
                 height: 100vh;
             }
 
             .flex-center {
-                align-items: center;
                 display: flex;
                 justify-content: center;
             }
@@ -56,16 +47,15 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref my-5">
             <h1 class="text-center">Galerie Laravel</h1>
-
-           <div class="text-center">
+        </div>
+        <div class="links content">
            <a href="{{route('home')}}">Home</a>
            <a href="{{route('tab_user')}}">Users</a>
            <a href="{{route('tab_avatar')}}">Avatars</a>
            <a href="{{route('tab_categorie')}}">Catégories</a>
            <a href="{{route('tab_image')}}">Images</a>
         </div>
-        </div> 
     </body>
 </html>
