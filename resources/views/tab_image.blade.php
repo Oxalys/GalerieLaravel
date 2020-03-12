@@ -12,9 +12,9 @@
 <table class="table">
  <thead>
    <tr>
-     <th scope="col">ID</th>
-     <th scope="col">Image</th>
-     <th scope="col">Action</th>
+     <th scope="col-4">ID</th>
+     <th scope="col-4">Image</th>
+     <th scope="col-4">Action</th>
      
    </tr>
  </thead>
