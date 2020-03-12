@@ -9,7 +9,7 @@ class UserController extends Controller
     public function index(){
         
         $users= User::all();
-        return view ('/tab_user', compact('users' ));
+        return view ('tab_user', compact('users' ));
     }
 
     public function create(){
@@ -39,7 +39,7 @@ class UserController extends Controller
             $users->age =$request->input('age');
             $users->email =$request->input('email');
             
-      
+            $avatars= Avatar::all();
         
         
         
@@ -75,7 +75,7 @@ class UserController extends Controller
 
            
             $users= User::find($id);
-            
+            $avatars= Avatar::all();      
             $users->name =$request->input('name');
             
             $users->age =$request->input('age');

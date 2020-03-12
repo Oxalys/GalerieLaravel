@@ -14,7 +14,6 @@ class CategorieController extends Controller
 
     public function create(){
 
-        
         $categories= Categorie::all();
         return view ('ajout_categorie' , compact('categories'));
         
