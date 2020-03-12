@@ -4,7 +4,7 @@
 
 
 
-<h2  class="text-center">Catégories</h2>
+<h2  class="text-center my-4">Catégories</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_categorie')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>

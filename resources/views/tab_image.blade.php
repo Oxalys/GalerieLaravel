@@ -4,7 +4,7 @@
 
 
 
-<h2  class="text-center">Images</h2>
+<h2  class="text-center my-4">Images</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_image')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>
