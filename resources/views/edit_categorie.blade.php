@@ -6,8 +6,7 @@
     <div class="form-row text-center">
 
         <div class="form-group col-md-6">
-              <input type="text" name="categorie"  placeholder="Entrer une catégorie" value="@if($errors->first('categorie'))
-              @else{{old('categorie')}}  @endif" class="form-control @error('categorie') is-invalid @enderror"  />
+        <input type="text" name="categorie"  placeholder="Entrer une catégorie" value='{{old('categorie', $categories->categorie)}}' class="form-control @error('categorie') is-invalid @enderror"  />
                 
               @error('categorie')
               <div class="text-danger">{{ $message }}

@@ -7,7 +7,8 @@
       <div class="form-row text-center">
           
           <div class="form-group col-md-6">
-            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name"  placeholder="Entrer un nom a votre avatar" />
+            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="@if($errors->first('name'))
+            @else{{old('name')}}  @endif" placeholder="Entrer un nom a votre avatar" />
             @error('name')  
           <div class="text-danger">{{ $message }}</div>  
               @enderror
