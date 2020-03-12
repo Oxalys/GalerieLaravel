@@ -16,7 +16,6 @@
      <th scope="col-3">Nom</th>
      <th scope="col-3">Avatar</th>
      <th scope="col-3">Action</th>
-     
    </tr>
  </thead>
  <tbody>
