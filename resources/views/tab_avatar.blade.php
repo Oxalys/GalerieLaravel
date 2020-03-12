@@ -12,10 +12,10 @@
 <table class="table">
  <thead>
    <tr>
-     <th scope="col-3">ID</th>
-     <th scope="col-3">Nom</th>
-     <th scope="col-3">Avatar</th>
-     <th scope="col-3">Action</th>
+     <th scope="col-3" class="text-center">ID</th>
+     <th scope="col-3" class="text-center">Nom</th>
+     <th scope="col-3" class="text-center">Avatar</th>
+     <th scope="col-3" class="text-center">Action</th>
    </tr>
  </thead>
  <tbody>
