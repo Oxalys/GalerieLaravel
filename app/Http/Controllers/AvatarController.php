@@ -36,7 +36,6 @@ class AvatarController extends Controller
 
             
             $avatars->name =$request->input('name');
-            
             $avatars->avatar =$storages;
             
       
@@ -70,12 +69,9 @@ class AvatarController extends Controller
                 
             ]);
 
-            // $storages=Storage::disk('public')->put('', $request->file('avatar'));
-        
-            
-
-           
             $avatars= Avatar::find($id);
+            $storages=Storage::disk('public')->put('', $request->file('avatar'));
+
             
             $avatars->name =$request->input('name');
             $avatars->avatar =$request->file('avatar');
