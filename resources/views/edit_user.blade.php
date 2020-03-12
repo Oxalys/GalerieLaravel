@@ -7,8 +7,7 @@
           
        
         <div class="form-group col-md-6">
-            <input type="text" name="name"    placeholder="Entrer votre nom"  value="@if($errors->first('name'))
-            @else{{old('name')}}  @endif"
+            <input type="text" name="name"    placeholder="Entrer votre nom"  value='{{old('name', $users->name)}}'
             class="form-control @error('name') is-invalid @enderror" />
             
         @error('name')
@@ -20,8 +19,7 @@
           
           <div class="form-group col-md-6">
               <input type="number"  name="age" 
-                placeholder="Entrer votre âge " value="@if($errors->first('age'))
-              @else{{old('age')}}  @endif"
+                placeholder="Entrer votre âge " value='{{old('age', $users->age)}}'
               class="form-control @error('age') is-invalid @enderror" />
               
           @error('age')
@@ -32,8 +30,7 @@
           </div>
 
           <div class="form-group col-md-6">
-              <input type="email"  name="email"    value="@if($errors->first('email'))
-              @else{{old('email')}}  @endif" placeholder="Entrer votre email" class="form-control @error('email') is-invalid @enderror" />
+              <input type="email"  name="email" value='{{old('email', $users->email)}}' placeholder="Entrer votre email" class="form-control @error('email') is-invalid @enderror" />
                 
               @error('email')
               <div class="text-danger">{{ $message }}

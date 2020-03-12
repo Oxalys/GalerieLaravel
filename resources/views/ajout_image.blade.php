@@ -9,7 +9,8 @@
           
           
             <div class="form-group col-md-6">
-                <input type="file" name="image" />
+                <input type="text" class="form-control @error('image') is-invalid @enderror" name="image" value="@if($errors->first('image'))
+                @else{{old('image')}}  @endif" />
                 @error('image')  
             <div class="text-danger">{{ $message }}</div>  
               @enderror
