@@ -41,7 +41,7 @@ class UserController extends Controller
             $users->age =$request->input('age');
             $users->email =$request->input('email');
             
-            $users= User::all();
+    
         
         
         
