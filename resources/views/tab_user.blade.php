@@ -3,7 +3,7 @@
 
 
 
-<h2  class="text-center">Users</h2>
+<h2  class="text-center my-4">Users</h2>
 <div class="text-center py-5">
     <a href="{{route('ajout_user')}}"><button class="btn btn-success text-center">Ajouter</button></a>
  </div>
