@@ -57,14 +57,15 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-           <h1>Galerie Laravel</h1>
+            <h1 class="text-center">Galerie Laravel</h1>
 
-           
+           <div class="text-center">
            <a href="{{route('home')}}">Home</a>
            <a href="{{route('tab_user')}}">Users</a>
            <a href="{{route('tab_avatar')}}">Avatars</a>
            <a href="{{route('tab_categorie')}}">Catégories</a>
            <a href="{{route('tab_image')}}">Images</a>
+        </div>
         </div>
     </body>
 </html>

@@ -11,12 +11,10 @@ class WelcomeController extends Controller
 {
     public function index(){
 
-        $users=User::all();
-        $avatars=Avatar::all();
-        $images=Image::all();
-        $categories=Categorie::all();
+        
+    
 
-    return view('welcome', compact('users' , "avatars" , "images" , "categories"));
+    return view('welcome');
     }
    
 }
