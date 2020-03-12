@@ -8,6 +8,7 @@
         <div class="form-group col-md-6">
             <input type="file" class="form-control" name="image"  placeholder="Your URL" />
             <div class="validation"></div>
+            
         </div>
           
   </div>

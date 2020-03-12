@@ -8,8 +8,7 @@
           
           
           <div class="form-group col-md-6">
-              <input type="text" class="form-control" name="name"  placeholder="Entrer votre nom"  value="@if($errors->first('name'))
-              @else{{old('name')}}  @endif"
+              <input type="text"  name="name"  placeholder="Entrer votre nom"  
               class="form-control @error('name') is-invalid @enderror" />
               
           @error('name')
@@ -20,21 +19,26 @@
             </div>
             
             <div class="form-group col-md-6">
-                <input type="number" class="form-control " name="age"  placeholder="Entrer votre âge "  value="@if($errors->first('name'))
-                @else{{old('name')}}  @endif"
-                class="form-control @error('name') is-invalid @enderror" />
+                <input type="number"  name="age"  placeholder="Entrer votre âge " 
+                class="form-control @error('age') is-invalid @enderror" />
                 
-            @error('name')
+            @error('age')
             <div class="text-danger">{{ $message }}
             </div>
             @enderror
                 <div class="validation"></div>
-              </div>/>
-                <div class="validation"></div>
             </div>
 
             <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email"  placeholder="Entrer votre email" />
+                <input type="email"  name="email"  placeholder="Entrer votre email"
+                value="@if($errors->first('age'))
+                @else{{old('age')}}  @endif"
+                class="form-control @error('age') is-invalid @enderror" />
+                
+            @error('age')
+            <div class="text-danger">{{ $message }}
+            </div>
+            @enderror
                 <div class="validation"></div>
             </div>
             
