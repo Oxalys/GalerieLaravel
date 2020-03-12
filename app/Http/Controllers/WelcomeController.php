@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Users;
+use App\User;
 use App\Avatar;
 use App\Image;
 use App\Categorie;
@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 class WelcomeController extends Controller
 {
     public function index(){
-    $users=Users::all();
+    $users=User::all();
     $avatars=Avatar::all();
     $images=Image::all();
     $categories=Categorie::all();
