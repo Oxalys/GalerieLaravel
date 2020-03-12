@@ -11,6 +11,7 @@
             .flex-center {
                 display: flex;
                 justify-content: center;
+                align-content: center
             }
 
             .position-ref {
@@ -48,9 +49,9 @@
     </head>
     <body>
         <div class="flex-center position-ref my-5">
-            <h1 class="text-center">Galerie Laravel</h1>
+            <h1 class="text-center mt-5">Galerie Laravel</h1>
         </div>
-        <div class="links content">
+        <div class="links content h1 py-5 flex-center h-25">
            <a href="{{route('home')}}">Home</a>
            <a href="{{route('tab_user')}}">Users</a>
            <a href="{{route('tab_avatar')}}">Avatars</a>
