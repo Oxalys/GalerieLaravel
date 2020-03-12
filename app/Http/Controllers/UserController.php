@@ -99,9 +99,9 @@ class UserController extends Controller
         // }
         
         public function destroy($id){
-            $livres=Livre::find($id);
-            unlink($livres->url);
-            $livres->delete();
+            $users=User::find($id);
+           
+            $users->delete();
             return redirect()->back();
         }
 }
