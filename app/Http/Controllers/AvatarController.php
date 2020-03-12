@@ -35,7 +35,7 @@ class AvatarController extends Controller
             
             $avatars->name =$request->input('name');
             
-            $avatars->email =$request->input('avatar');
+            $avatars->avatar =$request->input('avatar');
             
       
         

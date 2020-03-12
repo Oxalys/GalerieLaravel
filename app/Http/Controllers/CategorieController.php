@@ -33,7 +33,7 @@ class CategorieController extends Controller
 
             
         
-            $categories->email =$request->input('categorie');
+            $categories->categorie =$request->input('categorie');
             
       
         
