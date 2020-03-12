@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts/master')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -25,6 +17,7 @@
             }
 
             .flex-center {
+                align-items: center;
                 display: flex;
                 justify-content: center;
             }
@@ -66,8 +59,12 @@
         <div class="flex-center position-ref full-height">
            <h1>Galerie Laravel</h1>
 
-           @yield('content')
-
+           
+           <a href="{{route('home')}}">Home</a>
+           <a href="{{route('tab_user')}}">Users</a>
+           <a href="{{route('tab_avatar')}}">Avatars</a>
+           <a href="{{route('tab_categorie')}}">Catégories</a>
+           <a href="{{route('tab_image')}}">Images</a>
         </div>
     </body>
 </html>
