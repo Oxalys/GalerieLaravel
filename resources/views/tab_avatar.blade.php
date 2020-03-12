@@ -26,8 +26,8 @@
          <tr>
              <td>{{$item->id}}</td>
              <td>{{$item->name}}</td>
-             <td><img src="{{$item->avatar}}" alt=""></td>
-            
+             <td><img  class="w-25"src="{{asset("storage/".$item->avatar)}}" alt=""></td>
+             
              
              <td>
               
