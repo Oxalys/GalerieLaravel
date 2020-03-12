@@ -26,7 +26,7 @@ class ImageController extends Controller
         $request->validate([
         
         
-        'Image'=> 'required',
+        'image'=> 'required',
         
     ]);
             
