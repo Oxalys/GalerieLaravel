@@ -5,8 +5,8 @@
     @csrf
     <div class="form-row text-center">
         <div class="form-group col-md-6">
-            <input type="text"  name="name"  placeholder="Entrer un nom a votre avatar" value="@if($errors->first('name'))
-            @else{{old('name')}}  @endif"
+            <input type="text" value="@if($errors->first('name'))
+            @else{{old('name')}}  @endif" name="name"  placeholder="Entrer un nom a votre avatar" 
             class="form-control @error('name') is-invalid @enderror" />
             
         @error('name')

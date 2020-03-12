@@ -7,7 +7,7 @@
 <h2 class="py-3">Détails :</h2>
 
 <h4>Image:</h4>
-<img src="{{$item->image}}" alt="">
+<img  src="{{asset("storage/".$item->image)}}" alt="">
 <hr>
 
 </div>
