@@ -66,6 +66,6 @@
            <a href="{{route('tab_categorie')}}">Catégories</a>
            <a href="{{route('tab_image')}}">Images</a>
         </div>
-        </div>
+        </div> 
     </body>
 </html>
