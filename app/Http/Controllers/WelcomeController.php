@@ -9,10 +9,13 @@ use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
 {
+    public function index(){
     $users=Users::all();
     $avatars=Avatar::all();
     $images=Image::all();
     $categories=Categorie::all();
 
     return view('welcome', compact('users' , "avatars" , "images" , "categories"));
+    }
+   
 }
