@@ -48,7 +48,7 @@
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref my-5 border">
+        <div class="flex-center position-ref my-5 border bg-light">
             <h1 class="text-center my-5 title text-primary">Galerie Laravel</h1>
         </div>
 
