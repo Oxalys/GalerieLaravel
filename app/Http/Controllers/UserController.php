@@ -29,17 +29,23 @@ class UserController extends Controller
         'name'=> 'required|min:1',
         'age'=>'required',
         'email'=>'required',
+        'password'=>'required',
+        'id_avatar'=>'required',
+        'id_role'=>'required',
+        
         
     ]);
             
     
         $users= new User();
 
-            
+        
             $users->name =$request->input('name');
-            
             $users->age =$request->input('age');
             $users->email =$request->input('email');
+            $users->password =$request->input('password');
+            $users->id_avatar =$request->input('id_avatar');
+            $users->id_role =$request->input('id_role');
             
     
         
@@ -70,6 +76,7 @@ class UserController extends Controller
                 'name'=> 'required|min:1',
                 'age'=>'required',
                 'email'=>'required',
+                'password'=>'required'
             ]);
 
             
@@ -79,11 +86,14 @@ class UserController extends Controller
             $users= User::find($id);
             $avatars= Avatar::all();      
             $users->name =$request->input('name');
-            
             $users->age =$request->input('age');
             $users->email =$request->input('email');
+            $users->password =$request->input('password');
+            $users->id_avatar =$request->input('id_avatar');
+            $users->id_role =$request->input('id_role');
+           
             
-            $livres->save();
+            $users->save();
     
             return redirect()->route('tab_user');
 }
